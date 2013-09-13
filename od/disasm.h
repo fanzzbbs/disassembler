@@ -31,10 +31,6 @@
 #pragma option -K                      // Unsigned char
 #endif
 
-#if (char)0xFF!=255
-#error Please set default char type to unsigned
-#endif
-
 #define NEGLIMIT       (-16384)        // Limit to display constans as signed
 #define PSEUDOOP       128             // Base for pseudooperands
 #define TEXTLEN        256             // Maximal length of text string
@@ -295,8 +291,8 @@ typedef struct t_disasm {              // Results of disassembling
 } t_disasm;
 
 typedef struct t_asmmodel {            // Model to search for assembler command
-  char           code[MAXCMDSIZE];     // Binary code
-  char           mask[MAXCMDSIZE];     // Mask for binary code (0: bit ignored)
+  uchar          code[MAXCMDSIZE];     // Binary code
+  uchar          mask[MAXCMDSIZE];     // Mask for binary code (0: bit ignored)
   int            length;               // Length of code, bytes (0: empty)
   int            jmpsize;              // Offset size if relative jump
   int            jmpoffset;            // Offset relative to IP
@@ -327,7 +323,7 @@ int    Assemble(char *cmd,ulong ip,t_asmmodel *model,int attempt,
          int constsize,char *errtext);
 int    Checkcondition(int code,ulong flags);
 int    Decodeaddress(ulong addr,char *symb,int nsymb,char *comment);
-ulong  Disasm(char *src,ulong srcsize,ulong srcip,
+ulong  Disasm(uchar *src,ulong srcsize,ulong srcip,
          t_disasm *disasm,int disasmmode);
 ulong  Disassembleback(char *block,ulong base,ulong size,ulong ip,int n);
 ulong  Disassembleforward(char *block,ulong base,ulong size,ulong ip,int n);

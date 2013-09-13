@@ -25,7 +25,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <dir.h>
 #include <math.h>
 #include <float.h>
 #pragma hdrstop
@@ -303,7 +302,7 @@ static void Scanasm(int mode) {
           decimal=0;
           while (isdigit(*asmcmd)) {
             if (decimal<65536L) decimal=decimal*10+(*asmcmd++)-'0'; };
-          floating*=pow10l(decimal*base); };
+          floating*=pow(10, decimal*base); };
         fdata=floating;
         scan=SCAN_FCONST; return; }
       else {

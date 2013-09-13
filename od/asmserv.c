@@ -24,7 +24,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <dir.h>
 #include <math.h>
 #include <float.h>
 #pragma hdrstop
@@ -696,10 +695,10 @@ const t_cmddata dangerous[] = {
 int Decodeaddress(ulong addr,char *symb,int nsymb,char *comment) {
 
 
-  // Environment-specific routine! Do it yourself!
+	// Environment-specific routine! Do it yourself!
 
-
-  return 0;
+	comment[0] = '\0';
+	return 0;
 };
 
 // Decodes and prints 32-bit float f into string s (which must be at least 16
