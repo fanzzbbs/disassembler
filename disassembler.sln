@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "od", "od\od.vcxproj", "{4F13D760-E691-4C07-A98E-06BF7659FD43}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BeaEngine", "BeaEngine\BeaEngine.vcxproj", "{A2CB180E-5705-4810-8A70-B00F66151285}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{4F13D760-E691-4C07-A98E-06BF7659FD43}.Debug|Win32.Build.0 = Debug|Win32
 		{4F13D760-E691-4C07-A98E-06BF7659FD43}.Release|Win32.ActiveCfg = Release|Win32
 		{4F13D760-E691-4C07-A98E-06BF7659FD43}.Release|Win32.Build.0 = Release|Win32
+		{A2CB180E-5705-4810-8A70-B00F66151285}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2CB180E-5705-4810-8A70-B00F66151285}.Debug|Win32.Build.0 = Debug|Win32
+		{A2CB180E-5705-4810-8A70-B00F66151285}.Release|Win32.ActiveCfg = Release|Win32
+		{A2CB180E-5705-4810-8A70-B00F66151285}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,6 +3,8 @@ Debug/
 od/Debug/
 Release/
 od/Release/
+BeaEngine/Debug/
+BeaEngine/Release/
 *.aps
 *.opensdf
 *.sdf
